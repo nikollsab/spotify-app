@@ -1,0 +1,14 @@
+<div>
+<spotify-header
+    [brandUrl]="header.brandUrl"
+    [brand]="header.brand"
+    [logo]="header.logo"
+    [options]="header.options">
+</spotify-header>
+<div class="exit">
+    <button (click)="closeSession()"  mat-button color="accent" >
+    <mat-icon>exit_to_app</mat-icon>
+    <span>Salir</span>
+    </button>
+</div>
+<router-outlet></router-outlet>
