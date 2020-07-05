@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'spotify',
-    canActivate: [SpotifyAuthenticatedGuard],
+    // canActivate: [SpotifyAuthenticatedGuard],
     loadChildren: () => import('./features/admin/private.module').then(m => m.PrivateModule)
   },
   {

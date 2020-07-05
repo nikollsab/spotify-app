@@ -22,7 +22,7 @@ export class PrivateComponent implements OnInit {
   };
 
   constructor(
-    private session: SpotifySession,
+    // private session: SpotifySession,
     private router: Router
   ) { }
 
@@ -30,7 +30,7 @@ export class PrivateComponent implements OnInit {
   }
 
   closeSession() {
-    this.session.destroy();
+    // this.session.destroy();
     this.router.navigateByUrl('/');
   }
 }

@@ -13,7 +13,8 @@ export class LoginPresenter {
 constructor(
     private auth: AuthService,
     private router: Router,
-    private spotify: SpotifyService) { }
+    private spotify: SpotifyService
+    ) { }
 
 signIn() {
     this.auth.signIn()

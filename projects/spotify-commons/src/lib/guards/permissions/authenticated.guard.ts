@@ -13,12 +13,12 @@ export class SpotifyAuthenticatedGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
-        if (sessionStorage.getItem('token') != null) {
+   if (sessionStorage.getItem('token') != null) {
             console.log('Autenticado');
             return true;
         }
-        console.log('No autenticado');
-        this.router.navigate(['/login']);
-        return false;
+   console.log('No autenticado');
+   this.router.navigate(['/login']);
+   return false;
     }
 }
