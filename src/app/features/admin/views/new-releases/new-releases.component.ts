@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NewReleasesPresenter } from './new-releases.presenter';
-import { Album } from '../../interfaces/album-response.interface';
 
 @Component({
   selector: 'app-new-releases',
@@ -17,6 +16,5 @@ export class NewReleasesComponent implements OnInit {
   this.presenter.initial();
   this.presenter.loadNewReleases();
   }
-
 }
 

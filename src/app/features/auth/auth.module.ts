@@ -5,11 +5,10 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { SpotifyHeaderModule } from '@spotify/commons/components';
-import { SpotifyLoadingModule } from '@spotify/commons/components';
 import { CommonModule } from '@angular/common';
 import { ServicesModule } from '../admin/commons/http/services.module';
 import { AuthServicesModule } from './commons/http/services.module';
-import { HttpResponse } from '@angular/common/http';
+import { SpotifyBannerModule } from '@spotify/commons/components';
 
 
 @NgModule({
@@ -24,7 +23,8 @@ import { HttpResponse } from '@angular/common/http';
     AuthServicesModule,
     RouterModule,
     CommonModule,
-    ServicesModule
+    ServicesModule,
+    SpotifyBannerModule
     ]
   })
   export class AuthModule { }
